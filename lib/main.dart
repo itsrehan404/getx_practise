@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getx_practise/constant/app_colors.dart';
 import 'package:getx_practise/controller/bindings.dart';
+import 'package:getx_practise/home%20Screen/list_items.dart';
 import 'package:getx_practise/routes/route_names.dart';
 import 'package:getx_practise/routes/route_pages.dart';
 
@@ -20,8 +21,9 @@ class MyApp extends StatelessWidget {
           appBarTheme:
               AppBarTheme(centerTitle: true,
                   backgroundColor: AppColors.primaryColor)),
-      initialRoute: RouteNames.homeScreen,
-      getPages: RoutePages.routes,
+     home: ListItems(),
+     // initialRoute: RouteNames.homeScreen,
+     // getPages: RoutePages.routes,
       initialBinding: ControllerBindings(),
     );
   }
