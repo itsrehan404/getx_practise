@@ -22,4 +22,6 @@ class Controller extends GetxController {
   removeFruitList(String value){
     fruitList.remove(value);
   }
+
+  Lis
 }
